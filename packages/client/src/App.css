@@ -14,7 +14,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  background-color: #141414;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -34,5 +35,24 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.username {
+  font-size: small;
+}
+
+.messageList {
+  font-size: small;
+  max-width: 900px;
+  text-align: left;
+
+  .message {
+    &.assistant {
+      background-color: #141414;
+    }
+    &.user {
+      background-color: darkblue;
+    }
   }
 }
